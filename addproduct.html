@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>from product add</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/addproduct.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img" style="background-color: #329e5e;">
+                     <!-- <img src="images/444.jpeg" alt="">  -->
+                    <div class="signup-img-content">
+                        <h2> Ecommerce page </h2>
+                        <p> Add product</p>
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="first_name" class="required">Product name</label>
+                                    <input type="text" name="first_name" id="first_name" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="last_name" class="required">Company name</label>
+                                    <input type="text" name="last_name" id="last_name" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="company" class="required">Company product batch number</label>
+                                    <input type="text" name="company" id="company" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="phone_number" class="required">product number</label>
+                                    <input type="text" name="phone_number" id="phone_number">
+                                </div>
+                                <div class="form-input">
+                                    <label for="image" class="required">Upload Image:</label>
+                                    <input type="file" id="image" name="image" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="meal_preference" class="required" >Product category</label>
+                                        <!-- <a href="#" class="form-link">Lunch detail</a> -->
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="meal_preference" id="meal_preference">
+                                            <option value="Vegetarian">category 1</option>
+                                            <option value="Kosher">category 2</option>
+                                            <!-- <option value="Asian Vegetarian">Asian Vegetarian</option> -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    
+                                </div>
+                                <div class="form-input">
+                                    <label for="chequeno" class="required">Price per Product</label>
+                                    <input type="text" name="chequeno" id="chequeno" step="0.01" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="blank_name" class="required">Discount per Product</label>
+                                    <input type="text" name="blank_name" id="blank_name" step="0.01" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="payable" class="required">After Discount Price</label>
+                                    <input type="text" name="payable" id="payable" step="0.01" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="description" class="required">Product Description:</label>
+                                    <textarea id="description" name="description" rows="4"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donate-us">
+                            <!-- <label>Donate us</label>
+                            <div class="price_slider ui-slider ui-slider-horizontal">
+                                <div id="slider-margin"></div>
+                                <span class="donate-value" id="value-lower"></span>
+                            </div> -->
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Save" class="submit" id="submit" name="save" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                            <a style="text-align: justify; display: flex; justify-content: space-between; color: black;" href="#" onclick="window.history.back()">Back to List</a>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/addproductjquery.min.js"></script>
+    <script src="vendor/nouislider/addproductnouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/addproductjquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/addproductadditional-methods.min.js"></script>
+    <script src="js/addproduct.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
